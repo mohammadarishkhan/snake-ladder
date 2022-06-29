@@ -13,6 +13,9 @@
 		A31B89A927E34B940094B27D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A31B89A727E34B940094B27D /* Main.storyboard */; };
 		A31B89AB27E34B950094B27D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A31B89AA27E34B950094B27D /* Assets.xcassets */; };
 		A31B89AE27E34B950094B27D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A31B89AC27E34B950094B27D /* LaunchScreen.storyboard */; };
+		A31B89B627E34EA40094B27D /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31B89B527E34EA40094B27D /* UIViewExtension.swift */; };
+		A31B89BB27E351CA0094B27D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31B89BA27E351CA0094B27D /* HomeViewController.swift */; };
+		A31B89BF27E35A590094B27D /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31B89BE27E35A590094B27D /* HomeTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		A31B89AA27E34B950094B27D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A31B89AD27E34B950094B27D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A31B89AF27E34B950094B27D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A31B89B527E34EA40094B27D /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		A31B89BA27E351CA0094B27D /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		A31B89BE27E35A590094B27D /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,50 @@
 		A31B89A027E34B940094B27D /* Sanke $ Leader */ = {
 			isa = PBXGroup;
 			children = (
+				A31B89B727E351770094B27D /* Scene */,
 				A31B89A127E34B940094B27D /* AppDelegate.swift */,
 				A31B89A327E34B940094B27D /* SceneDelegate.swift */,
 				A31B89A527E34B940094B27D /* ViewController.swift */,
+				A31B89B527E34EA40094B27D /* UIViewExtension.swift */,
 				A31B89A727E34B940094B27D /* Main.storyboard */,
 				A31B89AA27E34B950094B27D /* Assets.xcassets */,
 				A31B89AC27E34B950094B27D /* LaunchScreen.storyboard */,
 				A31B89AF27E34B950094B27D /* Info.plist */,
 			);
 			path = "Sanke $ Leader";
+			sourceTree = "<group>";
+		};
+		A31B89B727E351770094B27D /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				A31B89B827E3518F0094B27D /* Home */,
+			);
+			path = Scene;
+			sourceTree = "<group>";
+		};
+		A31B89B827E3518F0094B27D /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				A31B89BC27E35A300094B27D /* Cell */,
+				A31B89B927E3519F0094B27D /* Controller */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		A31B89B927E3519F0094B27D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A31B89BA27E351CA0094B27D /* HomeViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A31B89BC27E35A300094B27D /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				A31B89BE27E35A590094B27D /* HomeTableViewCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +179,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A31B89BF27E35A590094B27D /* HomeTableViewCell.swift in Sources */,
+				A31B89BB27E351CA0094B27D /* HomeViewController.swift in Sources */,
 				A31B89A627E34B940094B27D /* ViewController.swift in Sources */,
 				A31B89A227E34B940094B27D /* AppDelegate.swift in Sources */,
+				A31B89B627E34EA40094B27D /* UIViewExtension.swift in Sources */,
 				A31B89A427E34B940094B27D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -306,7 +350,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -334,7 +378,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
